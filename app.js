@@ -11,8 +11,8 @@ app.get('/', function (req, res) {
   });
 });
 
-app.use('/todos', require('./todo/todo_router'));
-app.use('/users', require('./user/user_router'))
+app.use('/todos', require('./scr/todo/todo_router'));
+app.use('/users', require('./scr/user/user_router'))
 
 app.use(function (req, res, next) {
   const err = new Error('Not Found');

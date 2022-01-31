@@ -1,4 +1,4 @@
-const model = require('../models');
+const model = require('../../models');
 const TodoModel = model.todos;//
 
 exports.createTodo = async (todo) => {
